@@ -6,8 +6,8 @@ const Footer = () => {
     <Section>
       <Container>
         <Flex>
-          <li>주식회사 000</li>
-          <li>사업자 등록번호: 000-00-000000</li>
+          <li>(주) 모그</li>
+          <li>사업자 등록번호: 867-81-02415</li>
         </Flex>
         <Flex>
           <li><Link href="/agreement/terms">이용약관</Link></li>
