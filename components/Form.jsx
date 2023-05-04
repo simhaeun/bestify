@@ -36,7 +36,7 @@ const Register = () => {
 
   const onhandlePost = async (data) => {
     await axios
-      .post('http://localhost:3000/api/hello', data)
+      .post('/api/hello', data)
       .then(res => {
         console.log(res, '성공');
         setSuccess(true)
