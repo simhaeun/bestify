@@ -1,8 +1,9 @@
 import * as React from "react";
 import styled from "@emotion/styled";
 import Layout from "@/layouts/Layout";
-import Register from "@/components/Form";
 import CheckBoxIcon from '@mui/icons-material/CheckBox';
+import Form from "@/components/Form";
+
 export default function Demo() {
   return (
     <Layout>
@@ -20,7 +21,7 @@ export default function Demo() {
               </TextList>
             </TextWrap>
             <Box>
-              <Register />
+              <Form />
             </Box>
           </Grid>
         </Container>
