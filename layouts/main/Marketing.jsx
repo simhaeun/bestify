@@ -3,6 +3,8 @@ import styled from "@emotion/styled";
 import AccordionText from "../../components/Accordion";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import OperatingAgent from "@/components/OperatingAgent";
+import BusinessAgent from "@/components/BusinessAgent";
 
 const Marketing = () => {
   React.useEffect(() => {
@@ -35,20 +37,14 @@ const Marketing = () => {
           </Text>
         </Center>
         <Flex data-aos="fade-up" data-aos-delay="150">
-          <ImageDiv>
-            <h4>멀티 채널 광고 관리, 운영 대행 </h4>
-          </ImageDiv>
-          <ImageDiv>
-            <h4>매장 운영에 필요한 각종 업무 대행 </h4>
-          </ImageDiv>
-          {/* <div>
-            <ImageDiv />
+          <div>
+            <OperatingAgent/>
+            <Text>멀티 채널 광고 관리, 운영 대행 </Text>
           </div>
-          <LeftTextBox>
-            <div>
-              <AccordionText />
-            </div>
-          </LeftTextBox> */}
+          <div>
+            <BusinessAgent/>
+            <Text>매장 운영에 필요한 각종 업무 대행 </Text>
+          </div>
         </Flex>
       </Container>
     </section>
@@ -86,31 +82,6 @@ const Flex = styled.div`
   }
   @media (max-width: 1023px) {
     display: block;
-    margin: 1.5rem 0;
-  } ;
-`;
-const LeftTextBox = styled.div`
-  width: 100%;
-  text-align: left;
-  margin-left: 75px;
-  @media (max-width: 1023px) {
-    margin: 0;
-  }
-`;
-const ImageDiv = styled.div`
-  width: 48%;
-  height: 660px;
-  background: #f1f5fc;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 1rem;
-  box-shadow: 0 0 8px rgba(0,0,0,0.02), 0 0 5px rgba(0,0,0,0.02);
-  @media (max-width: 1023px) {
-    width: 100%;
-  } ;
-  @media (max-width: 767px) {
-    height: 300px;
     margin: 1.5rem 0;
   } ;
 `;

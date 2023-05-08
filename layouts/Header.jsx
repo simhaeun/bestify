@@ -11,9 +11,11 @@ import {
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import Link from "next/link";
+import Image from "next/image";
 
 const drawerWidth = "100%";
 const navItems = ["기능소개", "고객사례", "문의하기", "블로그"];
+const mobileNavItems = ["기능소개", "고객사례", "문의하기", "블로그", "무료이용"];
 
 const Header = () => {
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -22,10 +24,17 @@ const Header = () => {
   };
 
   const drawer = (
-    <Box onClick={handleDrawerToggle}>
-      <h3>로고</h3>
+    <DrawerWrap onClick={handleDrawerToggle}>
+      <h3>
+        <Image
+          src='/logo.png'
+          alt=""
+          width={100}
+          height={24}
+        />
+      </h3>
       <List>
-        {navItems.map((item) => (
+        {mobileNavItems.map((item) => (
           <ListItem key={item} disablePadding>
             <ListItemButton>
               <ListItemText primary={item} sx={{ color: "#4e5968" }} />
@@ -33,7 +42,7 @@ const Header = () => {
           </ListItem>
         ))}
       </List>
-    </Box>
+    </DrawerWrap>
   );
 
   return (
@@ -49,17 +58,19 @@ const Header = () => {
       </IconButton>
       <Nav>
         <h3>
-          <Link href="/">LOGO</Link>
+        <Image
+          src='/logo.png'
+          alt=""
+          width={100}
+          height={24}
+        />
         </h3>
         <Box sx={{ display: { xs: "none", sm: "block" } }}>
-          
           {navItems.map((item) => (
             <Button key={item}>
               <Link href={`/#${item}`}>{item}</Link>
-              {/* <Link href=''>{item}</Link> */}
             </Button>
           ))}
-
           <FreeBtn>
             <Link href='/demo'>
               무료이용시작
@@ -137,3 +148,9 @@ const Button = styled.button`
   font-size: 1rem;
   margin-right: 1.5rem;
 `;
+const DrawerWrap = styled.div`
+  height: 100vh;
+  > h3 {
+    padding: 1rem;
+  }
+`

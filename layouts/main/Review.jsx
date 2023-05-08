@@ -3,6 +3,7 @@ import styled from "@emotion/styled";
 import { Box, Typography } from "@mui/material";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Image from "next/image";
 
 const review = [
   {
@@ -53,7 +54,15 @@ const Review = () => {
           <Grid>
             {review.map((item) => (
               <Item key={item}>
-                <Typography variant="h6" component="h6" mb={2}>
+                <Profile>
+                  <Image
+                    src={`/images/review0${item.id}.png`}
+                    alt="review"
+                    width={180}
+                    height={180}
+                  />
+                </Profile>
+                <Typography variant="h6" component="h6" mt={8} mb={2}>
                   {item.name}
                 </Typography>
                 <Typography variant="body1" component="p">
@@ -88,7 +97,7 @@ const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  margin-top: 5rem;
+  margin-top: 120px;
   @media (max-width: 1023px) {
     display: block;
   } ;
@@ -97,6 +106,7 @@ const Grid = styled.div`
   }
 `;
 const Item = styled.div`
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -130,3 +140,13 @@ const SubTitle = styled.h4`
     font-size: 1.2rem;
   }
 `;
+const Profile = styled.div`
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  > img {
+    border-radius: 100px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.05), 0 0 5px rgba(0,0,0,0.05);
+  }
+`

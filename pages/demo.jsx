@@ -55,6 +55,10 @@ const Box = styled.div`
   padding: 75px 25px;
   border-radius: 1rem;
   box-shadow: 0 0 18px rgba(0, 0, 0, 0.03), 0 0 15px rgba(0, 0, 0, 0.03);
+  @media (max-width: 767px) {
+    border-radius: 6px;
+    padding: 50px 0;
+  }
 `;
 const TextWrap = styled.div`
   display: grid;
@@ -69,8 +73,11 @@ const Title = styled.h2`
   line-height: 1.2em;
   letter-spacing: -0.4px;
   font-weight: 700;
-  @media (max-width: 767px) {
+  @media (max-width: 1023px) {
     font-size: 2.25rem;
+  }
+  @media (max-width: 767px) {
+    font-size: 1.8rem;
   }
 `;
 const Text = styled.p`

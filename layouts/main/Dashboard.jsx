@@ -2,6 +2,7 @@ import * as React from "react";
 import styled from "@emotion/styled";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Image from "next/image";
 
 export default function Dashboard() {
   React.useEffect(() => {
@@ -46,13 +47,13 @@ export default function Dashboard() {
             </Text>
           </LeftTextBox>
           <div>
-            <ImageDiv />
+            <Image src="/images/image01.png" alt="" width={600} height={400} />
           </div>
         </Flex>
         <Flex data-aos="fade-left">
-          <div>
-            <ImageDiv />
-          </div>
+          <ImageDiv>
+            <Image src="/images/image02.jpg" alt="" width={600} height={400} />
+          </ImageDiv>
           <RightTextBox>
             <SubTitle>회원관리</SubTitle>
             <Title>
@@ -61,7 +62,7 @@ export default function Dashboard() {
               맞춤형 서비스 제공
             </Title>
             <Text>
-              대면, 비대면 상담을 통해 수집된 데이터로 
+              대면, 비대면 상담을 통해 수집된 데이터로
               <br />
               회원의 특성을 분석하여 맞춤형 서비스를 제공합니다.
             </Text>
@@ -82,12 +83,12 @@ export default function Dashboard() {
             </Text>
           </LeftTextBox>
           <div>
-            <ImageDiv />
+            <Image src="/images/image03.png" alt="" width={600} height={400} />
           </div>
         </Flex>
         <Flex data-aos="fade-left">
           <div>
-            <ImageDiv />
+            <Image src="/images/image04.jpg" alt="" width={600} height={400} />
           </div>
           <RightTextBox>
             <SubTitle>마케팅 관리</SubTitle>
@@ -182,6 +183,9 @@ const ImageDiv = styled.div`
   background: #fff;
   border-radius: 1rem;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.03), 0 0 5px rgba(0, 0, 0, 0.03);
+  > img {
+    border-radius: 1rem;
+  }
   @media (max-width: 1023px) {
     width: 100%;
     height: 300px;
