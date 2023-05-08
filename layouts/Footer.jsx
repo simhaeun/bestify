@@ -16,10 +16,11 @@ const Footer = () => {
           <li>
             <Link href="/agreement/privacy-policy">개인정보 처리방침</Link>
           </li>
+          <MobileHide>Copyright ⓒ Morg All rights reserved.</MobileHide>
         </Flex>
-        <Flex>
-        <li>Copyright ⓒ Morg All rights reserved.</li>
-        </Flex>
+        <Mobile>
+          <li>Copyright ⓒ Morg All rights reserved.</li>
+        </Mobile>
       </Container>
     </Section>
   );
@@ -61,6 +62,40 @@ const Flex = styled.ul`
     }
   }
   @media (max-width: 1200px) {
+    & > li {
+      font-size: 14px;
+    }
+  }
+  @media (max-width: 767px) {
+    & > li {
+      font-size: 12px;
+    }
+  }
+`;
+const MobileHide = styled.li`
+   @media (max-width: 1200px) {
+    display: none;
+  }
+`
+const Mobile = styled.ul`
+  display: none;
+  & > li {
+    position: relative;
+    list-style: none;
+    color: #a7a7aa;
+    font-size: 16px;
+    padding: 0 0.5rem 0 0;
+    ::before {
+      content: "";
+      border-left: 1px solid rgb(228, 228, 229);
+      padding: 0 0 0 0.5rem;
+    }
+    :nth-child(1)::before {
+      content: none;
+    }
+  }
+  @media (max-width: 1200px) {
+    display: block;
     & > li {
       font-size: 14px;
     }

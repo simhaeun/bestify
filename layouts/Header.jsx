@@ -25,14 +25,14 @@ const Header = () => {
 
   const drawer = (
     <DrawerWrap onClick={handleDrawerToggle}>
-      <h3>
+      <Link href='/'>
         <Image
           src='/logo.png'
           alt=""
           width={100}
           height={24}
         />
-      </h3>
+      </Link>
       <List>
         {mobileNavItems.map((item) => (
           <ListItem key={item} disablePadding>
@@ -57,14 +57,14 @@ const Header = () => {
         <MenuIcon />
       </IconButton>
       <Nav>
-        <h3>
-        <Image
-          src='/logo.png'
-          alt=""
-          width={100}
-          height={24}
-        />
-        </h3>
+        <Link href='/'>
+          <Image
+            src='/logo.png'
+            alt=""
+            width={100}
+            height={24}
+          />
+        </Link>
         <Box sx={{ display: { xs: "none", sm: "block" } }}>
           {navItems.map((item) => (
             <Button key={item}>
