@@ -1,6 +1,5 @@
 import * as React from "react";
 import styled from "@emotion/styled";
-import AccordionText from "../../components/Accordion";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import OperatingAgent from "@/components/OperatingAgent";
