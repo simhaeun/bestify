@@ -79,6 +79,7 @@ const MobileHide = styled.li`
 `
 const Mobile = styled.ul`
   display: none;
+  line-height: 1.6em;
   & > li {
     position: relative;
     list-style: none;

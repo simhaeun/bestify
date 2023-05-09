@@ -35,9 +35,9 @@ const Blog = () => {
               골프 아카데미 대표님들의 운영 노하우도 공유해요.
             </Text>
           </div>
-          <div data-aos="fade-in">
+          <AnimationWrap data-aos="fade-in">
             <Animation2 />
-          </div>
+          </AnimationWrap>
         </Flex>
       </Container>
     </Section>
@@ -81,3 +81,8 @@ const Text = styled.p`
     margin-top: 1rem;
   } ;
 `;
+const AnimationWrap = styled.div`
+  @media (max-width: 767px) {
+    display: none;
+  } ;
+`

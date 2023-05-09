@@ -53,7 +53,7 @@ const Grid = styled.div`
 `;
 const Box = styled.div`
   background: #fff;
-  padding: 75px 25px;
+  /* padding: 30px 25px; */
   border-radius: 1rem;
   box-shadow: 0 0 18px rgba(0, 0, 0, 0.03), 0 0 15px rgba(0, 0, 0, 0.03);
   @media (max-width: 767px) {

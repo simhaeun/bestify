@@ -58,11 +58,11 @@ const Review = () => {
                   <Image
                     src={`/images/review0${item.id}.png`}
                     alt="review"
-                    width={180}
-                    height={180}
+                    width={165}
+                    height={165}
                   />
                 </Profile>
-                <Typography variant="h6" component="h6" mt={8} mb={2}>
+                <Typography variant="h6" component="h6" mb={2}>
                   {item.name}
                 </Typography>
                 <Typography variant="body1" component="p">
@@ -97,12 +97,12 @@ const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  margin-top: 120px;
+  margin-top: 100px;
   @media (max-width: 1023px) {
     display: block;
   } ;
   @media (max-width: 1023px) {
-    margin-top: 50px;
+    margin-top: 80px;
   }
 `;
 const Item = styled.div`
@@ -111,14 +111,14 @@ const Item = styled.div`
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  height: 400px;
+  height: 350px;
   background: #fff;
   border-radius: 18px;
   box-shadow: 0 0 8px rgba(0,0,0,0.03), 0 0 5px rgba(0,0,0,0.03);
   padding: 24px;
   @media (max-width: 1023px) {
-    height: 300px;
-    margin-bottom: 1.5rem;
+    height: 280px;
+    margin-bottom: 80px;
   } ;
 `;
 const Title = styled.h2`
@@ -148,5 +148,9 @@ const Profile = styled.div`
   > img {
     border-radius: 100px;
     box-shadow: 0 0 8px rgba(0,0,0,0.05), 0 0 5px rgba(0,0,0,0.05);
+  }
+  @media (max-width: 767px) {
+    width: 120px;
+    height: 120px;
   }
 `

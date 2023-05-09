@@ -47,12 +47,12 @@ export default function Dashboard() {
             </Text>
           </LeftTextBox>
           <div>
-            <Image src="/images/image01.png" alt="" width={600} height={400} />
+            <Image src="/images/main01.png" alt="" width={600} height={400} />
           </div>
         </Flex>
         <Flex data-aos="fade-left">
           <ImageDiv>
-            <Image src="/images/image02.jpg" alt="" width={600} height={400} />
+            <Image src="/images/main02.png" alt="" width={600} height={400} />
           </ImageDiv>
           <RightTextBox>
             <SubTitle>회원관리</SubTitle>
@@ -83,12 +83,12 @@ export default function Dashboard() {
             </Text>
           </LeftTextBox>
           <div>
-            <Image src="/images/image03.png" alt="" width={600} height={400} />
+            <Image src="/images/main03.png" alt="" width={600} height={400} />
           </div>
         </Flex>
         <Flex data-aos="fade-left">
           <div>
-            <Image src="/images/image04.jpg" alt="" width={600} height={400} />
+            <Image src="/images/main04.png" alt="" width={600} height={400} />
           </div>
           <RightTextBox>
             <SubTitle>마케팅 관리</SubTitle>
@@ -179,16 +179,15 @@ const RightTextBox = styled.div`
 
 const ImageDiv = styled.div`
   width: 600px;
-  height: 400px;
-  background: #fff;
+  height: auto;
   border-radius: 1rem;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.03), 0 0 5px rgba(0, 0, 0, 0.03);
   > img {
     border-radius: 1rem;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.03), 0 0 5px rgba(0, 0, 0, 0.03);
   }
   @media (max-width: 1023px) {
     width: 100%;
-    height: 300px;
+    /* height: 300px; */
     margin: 1.5rem 0;
   }
   @media (max-width: 767px) {

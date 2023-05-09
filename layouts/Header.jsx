@@ -26,14 +26,16 @@ const Header = () => {
   const drawer = (
     <DrawerWrap onClick={handleDrawerToggle}>
       <Link href='/'>
+        <LogoWrap>
         <Image
           src='/logo.png'
           alt=""
-          width={100}
-          height={24}
+          width={80}
+          height={20}
         />
+        </LogoWrap>
       </Link>
-      <List>
+      <List sx={{ pt: 2 }}>
         {mobileNavItems.map((item) => (
           <ListItem key={item} disablePadding>
             <ListItemButton>
@@ -62,7 +64,7 @@ const Header = () => {
             src='/logo.png'
             alt=""
             width={100}
-            height={24}
+            height={25}
           />
         </Link>
         <Box sx={{ display: { xs: "none", sm: "block" } }}>
@@ -149,8 +151,13 @@ const Button = styled.button`
   margin-right: 1.5rem;
 `;
 const DrawerWrap = styled.div`
+  padding: 1rem;
   height: 100vh;
   > h3 {
-    padding: 1rem;
+    padding: 1rem 0;
   }
+`
+const LogoWrap = styled.div`
+  width: 90px;
+  height: 23px;
 `
