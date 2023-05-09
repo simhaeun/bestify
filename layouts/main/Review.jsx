@@ -62,15 +62,17 @@ const Review = () => {
                     height={165}
                   />
                 </Profile>
-                <Typography variant="h6" component="h6" mb={2}>
-                  {item.name}
-                </Typography>
-                <Typography variant="body1" component="p">
-                  {item.text1}
-                </Typography>
-                <Typography variant="body1" component="p">
-                  {item.text2}
-                </Typography>
+                <TextWrap>
+                  <Typography variant="h6" component="h6" mb={2}>
+                    {item.name}
+                  </Typography>
+                  <Typography variant="body1" component="p">
+                    {item.text1}
+                  </Typography>
+                  <Typography variant="body1" component="p">
+                    {item.text2}
+                  </Typography>
+                </TextWrap>
               </Item>
             ))}
           </Grid>
@@ -107,14 +109,12 @@ const Grid = styled.div`
 `;
 const Item = styled.div`
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
   width: 100%;
-  height: 350px;
+  height: auto;
   background: #fff;
   border-radius: 18px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.03), 0 0 5px rgba(0,0,0,0.03);
+  box-shadow: 0 8px 18px rgba(0,0,0,.05);
   padding: 24px;
   @media (max-width: 1023px) {
     height: 280px;
@@ -141,16 +141,30 @@ const SubTitle = styled.h4`
   }
 `;
 const Profile = styled.div`
-  position: absolute;
-  top: -50px;
-  left: 50%;
-  transform: translateX(-50%);
+  margin-top: -80px;
+  height: 165px;
   > img {
     border-radius: 100px;
     box-shadow: 0 0 8px rgba(0,0,0,0.05), 0 0 5px rgba(0,0,0,0.05);
+    @media (max-width: 767px) {
+      width: 120px;
+      height: 120px;
+    }
   }
   @media (max-width: 767px) {
-    width: 120px;
     height: 120px;
+  }
+`
+const TextWrap = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 180px;
+  > h6 {
+    font-weight: 600;
+  }
+  > p {
+    letter-spacing: -.6px;
+    color: #333;
   }
 `

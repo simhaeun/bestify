@@ -37,18 +37,34 @@ const Marketing = () => {
         </Center>
         <Flex data-aos="fade-up" data-aos-delay="150">
           <div>
-            <OperatingAgent/>
+            <SvgWrap>
+              <OperatingAgent />
+            </SvgWrap>
             <Text>멀티 채널 광고 관리, 운영 대행 </Text>
+            <Card>
+              <li>네이버 플레이스,검색 광고 최적화 및 세팅</li>
+              <li>네이버 검색광고 세팅</li>
+              <li>페이스북, 인스타그램 광고 집행</li>
+              <li>인플루언서</li>
+            </Card>
           </div>
           <div>
-            <BusinessAgent/>
+            <SvgWrap>
+              <BusinessAgent />
+            </SvgWrap>
             <Text>매장 운영에 필요한 각종 업무 대행 </Text>
+            <Card>
+              <li>디자인</li>
+              <li>출력, 배포</li>
+              <li>사이트 제작, 디자인 </li>
+              <li>프로필, 매장 촬영</li>
+            </Card>
           </div>
         </Flex>
       </Container>
     </section>
   );
-}
+};
 export default Marketing;
 
 const Container = styled.div`
@@ -82,7 +98,7 @@ const Flex = styled.div`
   @media (max-width: 1023px) {
     display: block;
     margin: 1.5rem 0;
-  } ;
+  }
 `;
 const Title = styled.h2`
   font-size: 3rem;
@@ -91,7 +107,7 @@ const Title = styled.h2`
   font-weight: 600;
   @media (max-width: 767px) {
     font-size: 2.25rem;
-  } ;
+  }
   @media (max-width: 767px) {
     font-size: 1.8rem;
   }
@@ -109,7 +125,31 @@ const Text = styled.p`
   font-size: 1.25rem;
   letter-spacing: -0.4px;
   line-height: 1.6em;
+  font-weight: 600;
   @media (max-width: 767px) {
     font-size: 1rem;
-  } ;
+  }
 `;
+const SvgWrap = styled.div`
+  width: 350px;
+  height: 350px;
+  margin: 0 auto;
+  display: flex;
+  @media (max-width: 479px) {
+    width: 100%;
+  }
+`
+const Card = styled.ul`
+ margin-top: 2rem;
+ width: 500px;
+  > li {
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: 0 8px 18px rgba(0,0,0,.05);
+    color: #333;
+  }
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+`

@@ -8,7 +8,6 @@ export default function BusinessAgent() {
       loop
       animationData={lottieJson}
       play
-      style={{ width: 450, height: 400 }}
     />
   )
 }

@@ -109,7 +109,7 @@ const AppBar = styled.header`
   padding: 1rem;
   backdrop-filter: blur(10px);
   background-color: rgba(255, 255, 255, 0.4);
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.03), 0 0 5px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 8px 18px rgba(0,0,0,.05);
   @media (max-width: 767px) {
     padding: 0.5rem 1.5rem;
   }

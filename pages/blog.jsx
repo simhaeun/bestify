@@ -146,7 +146,7 @@ const Card = styled.article`
   &:hover {
     transform: scale(1.02);
     transition-duration: 0.5s;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03), 0 2px 5px rgba(0, 0, 0, 0.03);
+    box-shadow: 0 8px 18px rgba(0,0,0,.05);
   }
   @media (max-width: 1297px) {
     width: 100%;

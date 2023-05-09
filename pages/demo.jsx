@@ -53,9 +53,8 @@ const Grid = styled.div`
 `;
 const Box = styled.div`
   background: #fff;
-  /* padding: 30px 25px; */
   border-radius: 1rem;
-  box-shadow: 0 0 18px rgba(0, 0, 0, 0.03), 0 0 15px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 8px 18px rgba(0,0,0,.05);
   @media (max-width: 767px) {
     border-radius: 6px;
     padding: 50px 0;

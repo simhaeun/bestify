@@ -83,7 +83,7 @@ export default function Dashboard() {
             </Text>
           </LeftTextBox>
           <div>
-            <Image src="/images/main03.png" alt="" width={600} height={400} />
+            <Image src="/images/main03.png" alt="" width={600} height={450} />
           </div>
         </Flex>
         <Flex data-aos="fade-left">
@@ -152,7 +152,7 @@ const Flex = styled.div`
     }
   }
   @media (max-width: 1023px) {
-    margin-top: 50px;
+    margin-top: 80px;
   }
 `;
 const LeftTextBox = styled.div`
@@ -183,11 +183,10 @@ const ImageDiv = styled.div`
   border-radius: 1rem;
   > img {
     border-radius: 1rem;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.03), 0 0 5px rgba(0, 0, 0, 0.03);
+    box-shadow: 0 8px 18px rgba(0,0,0,.05);
   }
   @media (max-width: 1023px) {
     width: 100%;
-    /* height: 300px; */
     margin: 1.5rem 0;
   }
   @media (max-width: 767px) {
