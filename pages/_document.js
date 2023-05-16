@@ -1,4 +1,5 @@
 import { Html, Head, Main, NextScript } from "next/document";
+import Script from "next/script";
 
 export default function Document() {
   return (
@@ -7,7 +8,9 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
-        <script
+        <Script
+          id="channelTalk"
+          strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `(function() {
               var w = window;
@@ -45,7 +48,7 @@ export default function Document() {
               }
             })();
             ChannelIO('boot', {
-              "pluginKey": "${process.env.API_CHANNEL_KEY}"
+              "pluginKey": "${process.env.CHANNEL_IO_KEY}"
             });
             `,
           }}
