@@ -3,7 +3,6 @@ import styled from "@emotion/styled";
 import Animation2 from "../../components/Animation2";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Link from "next/link";
 
 const Blog = () => {
   React.useEffect(() => {
