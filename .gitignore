@@ -33,3 +33,4 @@ npm-debug.log*
 next-env.d.ts
 
 .env.local
+._document.js
