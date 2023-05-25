@@ -135,7 +135,7 @@ const Title = styled.h2`
 const SubTitle = styled.h4`
   font-size: 1.4rem;
   line-height: 1.5em;
-  color: #227eff;
+  color: #47b589;
   @media (max-width: 767px) {
     font-size: 1.2rem;
   }

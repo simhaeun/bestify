@@ -44,7 +44,7 @@ const Main = () => {
 export default Main;
 
 const Section = styled.main`
-  background-image: url('images/background02.jpg');
+  /* background-image: url('images/background02.jpg'); */
   background-repeat: no-repeat;
   background-position: center 0;
   text-align: center;
@@ -63,12 +63,13 @@ const Button = styled.button`
   border-radius: 10px;
   line-height: 1.54;
   cursor: pointer;
-  background-color: #227eff;
+  background-color: #47b589;
+  
   font-weight: 600;
   border: none;
   color: #fff;
   &:hover {
-    background: #5e56f0;
+    background: #007c5c;
   }
   @media (max-width: 767px) {
     padding: 12px 24px;

@@ -101,7 +101,7 @@ const Title = styled.h2`
   } ;
 `;
 const SubTitle = styled.p`
-  color: #227eff;
+  color: #47b589;
   font-weight: 700;
   font-size: 1.25rem;
   letter-spacing: -0.4px;

@@ -28,10 +28,10 @@ const Header = () => {
       <Link href='/'>
         <LogoWrap>
         <Image
-          src='/logo.png'
-          alt=""
+          src='/morg-logo.png'
+          alt="logoImage"
           width={80}
-          height={20}
+          height={18}
         />
         </LogoWrap>
       </Link>
@@ -61,10 +61,10 @@ const Header = () => {
       <Nav>
         <Link href='/'>
           <Image
-            src='/logo.png'
-            alt=""
+            src='/morg-logo.png'
+            alt="logoImage"
             width={100}
-            height={25}
+            height={22}
           />
         </Link>
         <Box sx={{ display: { xs: "none", sm: "block" } }}>
@@ -136,12 +136,12 @@ const FreeBtn = styled.button`
   border-radius: 10px;
   line-height: 1.2em;
   cursor: pointer;
-  background-color: #227eff;
+  background-color: #47b589;
   font-weight: 600;
   border: none;
   color: #fff;
   &:hover {
-    background: #5e56f0;
+    background: #007c5c;
   }
 `;
 const Button = styled.button`
@@ -159,5 +159,6 @@ const DrawerWrap = styled.div`
 `
 const LogoWrap = styled.div`
   width: 90px;
-  height: 23px;
+  height: auto;
+  margin: 1rem;
 `

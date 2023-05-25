@@ -25,7 +25,7 @@ const AccordionWrap = styled(Accordion)`
     color: #ccc;
   }
   > div.Mui-expanded h4 {
-    color: #227eff;
+    color: #47b589;
     font-weight: 600;
   }
 `;

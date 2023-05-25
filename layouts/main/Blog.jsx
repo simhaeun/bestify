@@ -35,7 +35,7 @@ const Blog = () => {
             </Text>
           </div>
           <AnimationWrap data-aos="fade-in">
-            <Animation2 />
+            {/* <Animation2 /> */}
           </AnimationWrap>
         </Flex>
       </Container>
