@@ -37,9 +37,11 @@ const Contact = () => {
 export default Contact;
 
 const Section = styled.section`
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url('images/background01.jpg');
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url('images/background01.jpg'); */
+  background: #90bca1;
   background-size: cover;
   background-repeat: no-repeat;
+  padding: 80px 0;
 `;
 const Container = styled.div`
   width: 1200px;
@@ -51,18 +53,17 @@ const Container = styled.div`
   } ;
 `;
 const Title = styled.h2`
-  font-size: 3rem;
+  font-size: 2.8rem;
   line-height: 1.2em;
   letter-spacing: -0.4px;
   font-weight: 600;
-  margin-top: 1rem;
   color: #fff;
   @media (max-width: 767px) {
     font-size: 1.8rem;
   } ;
 `;
 const SubTitle = styled.h4`
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   line-height: 1.5em;
   font-weight: 400;
   letter-spacing: -0.4px;

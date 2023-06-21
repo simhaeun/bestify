@@ -46,9 +46,9 @@ const Review = () => {
       <Container>
         <SubTitle data-aos="fade-in">고객사례</SubTitle>
         <Title data-aos="fade-in">
-          이미 많은 분들이
+          최근 도입한 고객사의
           <br />
-          실무에서 사용하고 있어요
+          따끈한 후기를 확인해보세요
         </Title>
         <Box data-aos="fade-up" data-aos-delay="200">
           <Grid>
@@ -99,7 +99,7 @@ const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  margin-top: 100px;
+  margin-top: 120px;
   @media (max-width: 1023px) {
     display: block;
   } ;

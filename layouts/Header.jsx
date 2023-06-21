@@ -14,8 +14,8 @@ import Link from "next/link";
 import Image from "next/image";
 
 const drawerWidth = "100%";
-const navItems = ["기능소개", "고객사례", "문의하기", "블로그"];
-const mobileNavItems = ["기능소개", "고객사례", "문의하기", "블로그", "무료이용"];
+const navItems = ["기능소개", "고객사례", "문의하기"];
+const mobileNavItems = ["기능소개", "고객사례", "문의하기"];
 
 const Header = () => {
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -73,6 +73,11 @@ const Header = () => {
               <Link href={`/#${item}`}>{item}</Link>
             </Button>
           ))}
+          <Button>
+            <Link href="https://blog.naver.com/morgkorea" target="_blank">
+              블로그
+            </Link>
+          </Button>
           <FreeBtn>
             <Link href='/demo'>
               무료이용시작

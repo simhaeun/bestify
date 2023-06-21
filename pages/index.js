@@ -19,7 +19,7 @@ const Home = () => {
       <Marketing />
       <Review/>
       <Contact/>
-      <Blog/>
+      {/* <Blog/> */}
       {/* <Talk/> */}
     </Layout>
   )

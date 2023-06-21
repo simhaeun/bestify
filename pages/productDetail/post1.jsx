@@ -23,25 +23,25 @@ export default function post1() {
     <Layout>
       <Section>
         <Container>
-          <TitleWrap>
-            <SubTitle>SUBTITLE</SubTitle>
-            <Title>설문을 원페이지로 만드는 법</Title>
-            <Date>April 5, 2023</Date>
-          </TitleWrap>
-
-          <Content>
-            <div style={{marginBottom: '75px'}}>
-              <CoverImage/>
-            </div>
-            <h4>✒️ Editor’s Note </h4>
-            <p>많은 분들이 기다리고 기다리시던, 원페이지 설문이 업데이트 되었습니다! ‘원페이지 설문’이란, 여러 문항이 한 페이지 내에서 보이는 설문을 의미합니다. 기존 왈라의 설문이 한페이지 당 하나의 응답만 할 수 있는 툴이었다면, 이제는 여러가지 문항을 한 번에 보실 수 있습니다! 오늘은 어떻게 원페이지 설문을 만드는지 알려드릴게요.</p>
-            <br />
-            <h4>어떻게 만들 수 있나요?</h4>
-            <p>우선, 이전과 동일하게 프로젝트를 생성하고, [프로젝트 편집] 페이지에 들어갑니다. [프로젝트 편집] 페이지에서 [다중필드]를 선택하시면 끝입니다!</p>
-          </Content>
-
+          <Grid>
+            <ImageWrap />
+            <TitleWrap>
+              <Title>Basic Package</Title>
+              <SubTitle>월 33만원 * 3개월 = 99만원 (정상가 140만원)</SubTitle>
+              <p>3개월, 처음 시작하는 분들, 센터 규모 타석 7개 미만</p>
+              <ul>
+                <li>기본 상권, 고객 분석</li>
+                <li>네이버 플레이스,검색 광고 최적화 및 세팅</li>
+                <li>네이버 검색광고 세팅</li>
+                <li>홈페이지 개설</li>
+                <li>매장 촬영 (고화질 30장(보정))</li>
+                <li>디자인 10개 (디지털 마케팅)</li>
+                <li>월간리포트</li>
+              </ul>
+            </TitleWrap>
+          </Grid>
           <div>
-            <h2 style={{marginBottom: '25px'}}>다른 콘텐츠</h2>
+            <h2 style={{ marginTop: "400px" }}>다른 콘텐츠</h2>
             <Post>
               {blog.map((item, index) => {
                 return (
@@ -58,32 +58,54 @@ export default function post1() {
               })}
             </Post>
           </div>
-
         </Container>
       </Section>
     </Layout>
-  )
+  );
 }
 const Section = styled.section`
   background: #f8f8f8;
 `;
 const Container = styled.div`
-  width: 1200px;
+  width: 1600px;
   margin: 0 auto;
-  text-align: center;
   @media (max-width: 1279px) {
     width: 100%;
     padding: 0 1.5rem;
-  } ;
+  }
 `;
+const Grid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 40px;
+`;
+const ImageWrap = styled.div`
+  height: 650px;
+  background: #000;
+`;
+
 const TitleWrap = styled.div`
-  max-width: 1000px;
-  margin: 0 auto 100px;
+  margin-left: 2rem;
+  > ul {
+    margin-top: 2rem;
+    > li {
+      line-height: 2rem;
+      ::before {
+        content: "";
+        width: 15px;
+        height: 15px;
+        background: #000;
+        border-radius: 16px;
+        display: inline-block;
+        margin-right: 8px;
+      }
+    }
+  }
   @media (max-width: 767px) {
     padding-bottom: 25px;
     border-bottom: 1px solid #cbcbcb;
   }
-`
+`;
 const Title = styled.h2`
   font-size: 3rem;
   line-height: 1.2em;
@@ -92,7 +114,7 @@ const Title = styled.h2`
   margin-bottom: 1rem;
   @media (max-width: 767px) {
     font-size: 1.8rem;
-  } ;
+  }
 `;
 const SubTitle = styled.p`
   color: #47b589;
@@ -102,7 +124,7 @@ const SubTitle = styled.p`
   margin-bottom: 1rem;
   @media (max-width: 767px) {
     font-size: 1rem;
-  } ;
+  }
 `;
 const Date = styled.p`
   font-size: 1.25rem;
@@ -110,7 +132,7 @@ const Date = styled.p`
   line-height: 1.6em;
   @media (max-width: 767px) {
     font-size: 1rem;
-  } ;
+  }
 `;
 const Content = styled.div`
   max-width: 1000px;
@@ -122,7 +144,7 @@ const Content = styled.div`
   text-align: left;
   @media (max-width: 767px) {
     font-size: 1rem;
-  } ;
+  }
 `;
 const CoverImage = styled.div`
   background: #000;
@@ -132,7 +154,7 @@ const CoverImage = styled.div`
   @media (max-width: 767px) {
     height: 200px;
   }
-`
+`;
 const Post = styled.div`
   display: grid;
   gap: 1rem;
@@ -140,7 +162,7 @@ const Post = styled.div`
   @media (max-width: 767px) {
     display: block;
   }
-`
+`;
 const Card = styled.article`
   position: relative;
   border-radius: 1rem;
@@ -149,7 +171,7 @@ const Card = styled.article`
   @media (max-width: 767px) {
     width: 100%;
   }
-`
+`;
 const Thumbnail = styled.div`
   background: #000;
   border-radius: 1rem 1rem 0 0;
@@ -159,7 +181,7 @@ const Thumbnail = styled.div`
     border-radius: 8px 8px 0 0;
     height: 180px;
   }
-`
+`;
 const CardText = styled.div`
   padding: 2rem;
   height: 150px;
@@ -168,18 +190,18 @@ const CardText = styled.div`
     padding: 30px 1rem;
     height: auto;
   }
-`
+`;
 const CardTitle = styled.h4`
   font-size: 1.25rem;
   @media (max-width: 767px) {
     font-size: 1rem;
   }
-`
+`;
 const CardSummary = styled.p`
   font-size: 1rem;
   padding-top: 1rem;
   color: #979797;
   @media (max-width: 767px) {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
-`
+`;

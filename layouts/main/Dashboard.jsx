@@ -47,12 +47,12 @@ export default function Dashboard() {
             </Text>
           </LeftTextBox>
           <div>
-            <Image src="/images/main01.png" alt="" width={600} height={400} />
+            <Image src="/images/main07.png" alt="" width={600} height={400} />
           </div>
         </Flex>
         <Flex data-aos="fade-left">
           <ImageDiv>
-            <Image src="/images/main02.png" alt="" width={600} height={400} />
+            <Image src="/images/main06.png" alt="" width={600} height={450} />
           </ImageDiv>
           <RightTextBox>
             <SubTitle>회원관리</SubTitle>
@@ -83,12 +83,12 @@ export default function Dashboard() {
             </Text>
           </LeftTextBox>
           <div>
-            <Image src="/images/main03.png" alt="" width={600} height={450} />
+            <Image src="/images/main05.png" alt="" width={600} height={400} />
           </div>
         </Flex>
         <Flex data-aos="fade-left">
           <div>
-            <Image src="/images/main04.png" alt="" width={600} height={400} />
+            <Image src="/images/main02.png" alt="" width={600} height={400} />
           </div>
           <RightTextBox>
             <SubTitle>마케팅 관리</SubTitle>
@@ -183,7 +183,7 @@ const ImageDiv = styled.div`
   border-radius: 1rem;
   > img {
     border-radius: 1rem;
-    box-shadow: 0 8px 18px rgba(0,0,0,.05);
+    /* box-shadow: 0 8px 18px rgba(0,0,0,.05); */
   }
   @media (max-width: 1023px) {
     width: 100%;
