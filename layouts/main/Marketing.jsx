@@ -45,6 +45,21 @@ const Marketing = () => {
     },
   ];
 
+  const tabItems = [
+    {
+      title: "고객을 단골 고객으로 전환",
+      text: "최고의 마케팅은 비용 효율적일 뿐만 아니라 시간 효율적입니다. 모그의 자동화 마케팅 시스템을 사용하면 별도의 관리 없이 50% 이상의 재등록을 달성할 수 있습니다.",
+    },
+    {
+      title: "데이터 기반 마케팅 전략",
+      text: "해석하기 어렵거나 검증되지 않은 마케팅에 돈을 쏟아 붓는 것을 중단하세요! 저희는 골프 연습장 / 아카데미를 위한 가장 효과적인 마케팅 전략을 테스트하고 최적화 했습니다. 고객의 특성을 파악하여 매장 맞춤형 광고를 집행하고 명확하고 정직한 리포트를 제공해드립니다. 이를 통해 고객의 유입을 늘리고, 재구매를 유도할 수 있습니다.",
+    },
+    {
+      title: "마케팅에 필요한 모든 것을 한 곳에서",
+      text: "여러 디자인 업체를 선정하고 컨택하는데 시간을 들이지 마세요! 매장 홍보에 필요한 모든 인쇄물 제작부터 배포, 온라인용 이미지까지 모그를 통해 한번에 해결할 수 있습니다.",
+    },
+  ];
+
   return (
     <section>
       <Container>
@@ -60,44 +75,22 @@ const Marketing = () => {
           </Text>
         </Center>
 
-        <div>
-          <Flex>
-            <ImageWrap />
-            <TextWrap>
-              <h4>자동화된 마케팅을 통해<br/>고객을 단골 고객으로 전환</h4>
-              <p>
-                최고의 마케팅은 비용 효율적일 뿐만 아니라 시간 효율적입니다.
-                모그의 자동화 마케팅 시스템을 사용하면 별도의 관리 없이 50%
-                이상의 재등록을 달성할 수 있습니다.
-              </p>
-            </TextWrap>
-          </Flex>
-          <Flex>
-            <ImageWrap />
-            <TextWrap>
-              <h4>데이터 기반 마케팅 전략</h4>
-              <p>
-                해석하기 어렵거나 검증되지 않은 마케팅에 돈을 쏟아 붓는 것을
-                중단하세요. 저희는 골프연습장/아카데미를 위한 가장 효과적인
-                마케팅 전략을 테스트하고 최적화 했습니다. 고객의 특성을 파악하여
-                매장 맞춤형 광고를 집행하고 명확하고 정직한 리포트를
-                제공해드립니다. 이를 통해 고객의 유입을 늘리고, 재구매를 유도할
-                수 있습니다.
-              </p>
-            </TextWrap>
-          </Flex>
-          <Flex>
-            <ImageWrap />
-            <TextWrap>
-              <h4>마케팅에 필요한 모든 것을 한 곳에서</h4>
-              <p>
-                여러 디자인 업체를 선정하고 컨택하는데 시간을 들이지 마세요.
-                매장 홍보에 필요한 모든 인쇄물 제작부터 배포, 온라인용
-                이미지까지 모그를 통해 한번에 해결할 수 있습니다.
-              </p>
-            </TextWrap>
-          </Flex>
-        </div>
+        {/* <div>
+          {tabItems.map((item) => {
+            return (
+              <>
+                <Flex>
+                  <ImageWrap />
+                  <TextWrap>
+                    <h4>{item.title}</h4>
+                    <p>{item.text}</p>
+                  </TextWrap>
+                </Flex>
+              </>
+            );
+          })}
+        </div> */}
+
         {/* <GridContainer data-aos="fade-up" data-aos-delay="150">
           {product.map((item, index) => {
             return (
@@ -223,7 +216,7 @@ const TextWrap = styled.div`
     font-size: 30px !important;
     line-height: 1.2;
     margin-bottom: 2rem;
-    letter-spacing: -.4px;
+    letter-spacing: -0.4px;
     color: #007c5c;
   }
   > p {

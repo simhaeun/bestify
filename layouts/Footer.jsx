@@ -29,7 +29,7 @@ const Footer = () => {
             </ul>
             <ul>
               <li>SNS</li>
-              <li>블로그</li>
+              <li><Link href="https://blog.naver.com/morgkorea" target="_blank">블로그</Link></li>
               <li>Instagram</li>
             </ul>
             <ul>
