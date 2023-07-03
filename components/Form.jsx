@@ -6,7 +6,7 @@ const Form = () => {
     <>
       <Widget
         id="VG74PFKO"
-        style={{ width: "600px", height: "800px" }}
+        style={{ maxWidth: "600px", height: "800px" }}
         className="my-form"
       />
     </>

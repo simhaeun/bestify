@@ -73,12 +73,17 @@ const Container = styled.div`
   width: 1200px;
   margin: 0 auto;
   text-align: center;
+  @media (max-width: 1279px) {
+    width: 100%;
+    padding: 0 1.5rem;
+  }
 `;
 const Flex = styled.div`
   display: flex;
   justify-content: space-between;
 `;
 const ImageDiv = styled.div`
+  height: auto;
   margin: 0 auto;
   border-radius: 1rem;
   @media (max-width: 1023px) {

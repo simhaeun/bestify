@@ -62,11 +62,17 @@ const Container = styled.div`
   padding: 1rem 0;
   @media (max-width: 1200px) {
     width: 100%;
-    padding: 0 1.5rem;
+    padding: 1rem 2rem;
   }
 `;
 const LogoWrap = styled.div`
   margin-bottom: 30px;
+  @media (max-width: 767px) {
+    margin-bottom: 1rem;
+    > img {
+      width: 72px;
+    }
+  }
 `;
 const Flex = styled.div`
   display: flex;
@@ -86,8 +92,18 @@ const Flex = styled.div`
     }
   }
   @media (max-width: 767px) {
-    & > li {
-      font-size: 12px;
+    display: block;
+    font-size: .8rem;
+    > ul {
+      display: none; /* 추후 -> display: flex; 로 변경 */
+      margin-left: 0px;
+      > li {
+        font-size: .8rem;
+        margin-right: 6px;
+      }
+    }
+    > ul:first-child {
+      margin-top: 1rem;
     }
   }
 `;

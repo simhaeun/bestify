@@ -15,7 +15,13 @@ import Image from "next/image";
 
 const drawerWidth = "100%";
 const navItems = ["기능소개", "고객사례", "문의하기"];
-const mobileNavItems = ["기능소개", "고객사례", "문의하기"];
+const mobileNavItems = [
+  { title: "기능소개", nav: "/#기능소개" },
+  { title: "고객사례", nav: "/#고객사례" },
+  { title: "문의하기", nav: "/#문의하기" },
+  { title: "블로그", nav: "https://blog.naver.com/morgkorea" },
+  { title: "무료이용시작", nav: "/demo" },
+];
 
 const Header = () => {
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -25,21 +31,18 @@ const Header = () => {
 
   const drawer = (
     <DrawerWrap onClick={handleDrawerToggle}>
-      <Link href='/'>
+      <Link href="/">
         <LogoWrap>
-        <Image
-          src='/morg-logo.png'
-          alt="logoImage"
-          width={80}
-          height={18}
-        />
+          <Image src="/morg-logo.png" alt="logoImage" width={80} height={18} />
         </LogoWrap>
       </Link>
       <List sx={{ pt: 2 }}>
         {mobileNavItems.map((item) => (
           <ListItem key={item} disablePadding>
             <ListItemButton>
-              <ListItemText primary={item} sx={{ color: "#4e5968" }} />
+              <Button key={item}>
+                <Link href={`${item.nav}`}>{item.title}</Link>
+              </Button>
             </ListItemButton>
           </ListItem>
         ))}
@@ -59,13 +62,8 @@ const Header = () => {
         <MenuIcon />
       </IconButton>
       <Nav>
-        <Link href='/'>
-          <Image
-            src='/morg-logo.png'
-            alt="logoImage"
-            width={100}
-            height={22}
-          />
+        <Link href="/">
+          <Image src="/morg-logo.png" alt="logoImage" width={100} height={22} />
         </Link>
         <Box sx={{ display: { xs: "none", sm: "block" } }}>
           {navItems.map((item) => (
@@ -79,9 +77,7 @@ const Header = () => {
             </Link>
           </Button>
           <FreeBtn>
-            <Link href='/demo'>
-              무료이용시작
-            </Link>
+            <Link href="/demo">무료이용시작</Link>
           </FreeBtn>
         </Box>
       </Nav>
@@ -102,7 +98,7 @@ const Header = () => {
       </MobileNav>
     </AppBar>
   );
-}
+};
 export default Header;
 
 const AppBar = styled.header`
@@ -114,7 +110,7 @@ const AppBar = styled.header`
   padding: 1rem;
   backdrop-filter: blur(10px);
   background-color: rgba(255, 255, 255, 0.4);
-  box-shadow: 0 8px 18px rgba(0,0,0,.05);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
   @media (max-width: 767px) {
     padding: 0.5rem 1.5rem;
   }
@@ -161,9 +157,9 @@ const DrawerWrap = styled.div`
   > h3 {
     padding: 1rem 0;
   }
-`
+`;
 const LogoWrap = styled.div`
   width: 90px;
   height: auto;
   margin: 1rem;
-`
+`;
