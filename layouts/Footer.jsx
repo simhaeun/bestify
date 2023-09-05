@@ -14,7 +14,7 @@ const Footer = () => {
         <Flex>
           <div>
             <p>주식회사 모그</p>
-            <p>서울특별시 강남구 역삼동</p>
+            <p>서울특별시 강남구 도곡동 187-1</p>
             <p>사업자 등록번호: 867-81-02415</p>
             <span style={{fontSize: '12px'}}>Copyright ⓒ Morg All rights reserved.</span>
           </div>
@@ -22,15 +22,16 @@ const Footer = () => {
           <Flex>
             <ul>
               <li>고객센터</li>
-              <li>공지사항</li>
-              <li>사용 가이드</li>
-              <li>자주 묻는 질문</li>
-              <li>온라인 상담</li>
+              {/* <li>공지사항</li> */}
+              <li>
+              <Link href="https://delicious-seahorse-726.notion.site/GUIDE-1a669526370d45ff89204b1cec37c438?pvs=4" target="_blank">이용 가이드</Link></li>
+              {/* <li>자주 묻는 질문</li> */}
+              {/* <li>온라인 상담</li> */}
             </ul>
             <ul>
               <li>SNS</li>
               <li><Link href="https://blog.naver.com/morgkorea" target="_blank">블로그</Link></li>
-              <li>Instagram</li>
+              <li><Link href="https://www.instagram.com/morg_korea/" target="_blank">Instagram</Link></li>
             </ul>
             <ul>
               <li>Terms and Policy</li>
