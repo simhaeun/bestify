@@ -12,15 +12,14 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 import Link from "next/link";
 import Image from "next/image";
-
 const drawerWidth = "100%";
-const navItems = ["기능소개", "고객사례", "문의하기"];
-const mobileNavItems = [
-  { title: "기능소개", nav: "/#기능소개" },
-  { title: "고객사례", nav: "/#고객사례" },
-  { title: "문의하기", nav: "/#문의하기" },
+const navItems = [
+  { title: "기능소개", nav: "/#skill" },
+  { title: "마케팅", nav: "/#marketing" },
+  { title: "고객사례", nav: "/#review" },
+  { title: "문의하기", nav: "/#contact" },
   { title: "블로그", nav: "https://blog.naver.com/morgkorea" },
-  { title: "무료이용시작", nav: "/demo" },
+  // { title: "무료이용시작", nav: "/demo" },
 ];
 
 const Header = () => {
@@ -37,7 +36,7 @@ const Header = () => {
         </LogoWrap>
       </Link>
       <List sx={{ pt: 2 }}>
-        {mobileNavItems.map((item) => (
+        {navItems.map((item) => (
           <ListItem key={item} disablePadding>
             <ListItemButton>
               <Button key={item}>
@@ -68,16 +67,12 @@ const Header = () => {
         <Box sx={{ display: { xs: "none", sm: "block" } }}>
           {navItems.map((item) => (
             <Button key={item}>
-              <Link href={`/#${item}`}>{item}</Link>
+              <Link href={`${item.nav}`}>{item.title}</Link>
             </Button>
           ))}
-          <Button>
-            <Link href="https://blog.naver.com/morgkorea" target="_blank">
-              블로그
-            </Link>
-          </Button>
           <FreeBtn>
             <Link href="/demo">무료이용시작</Link>
+            {/* <Link href="https://www.morg.im/" target="_blank">무료이용시작</Link> */}
           </FreeBtn>
         </Box>
       </Nav>

@@ -20,7 +20,7 @@ const Blog = () => {
   }, []);
 
   return (
-    <Section id="블로그">
+    <Section id="blog">
       <Container>
         <Flex>
           <div data-aos="fade-in">

@@ -19,7 +19,7 @@ const Contact = () => {
   }, []);
 
   return (
-    <Section id="문의하기">
+    <Section id="contact">
       <Container>
         <Title data-aos="fade-in">
           궁금하신 점이 있다면

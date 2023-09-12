@@ -21,7 +21,7 @@ export default function Dashboard() {
   }, []);
 
   return (
-    <Section id="기능소개">
+    <Section id="skill">
       <Container>
         <Center data-aos="fade-in">
           <SubTitle>모든 운영 데이터를 한 곳에서</SubTitle>

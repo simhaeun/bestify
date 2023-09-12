@@ -49,7 +49,7 @@ const Review = () => {
   }, []);
 
   return (
-    <Section id="고객사례">
+    <Section id="review">
       <Container>
         <SubTitle data-aos="fade-in">고객사례</SubTitle>
         <Title data-aos="fade-in">

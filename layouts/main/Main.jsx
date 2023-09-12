@@ -37,6 +37,7 @@ const Main = () => {
           </SubTitle>
           <Button data-aos="fade-in" data-aos-delay="150">
             <Link href="/demo">무료이용시작</Link>
+            {/* <Link href="https://www.morg.im/" target="_blank">무료이용시작</Link> */}
           </Button>
           <span
             data-aos="fade-in"
