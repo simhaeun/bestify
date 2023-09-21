@@ -38,7 +38,7 @@ export default Contact;
 
 const Section = styled.section`
   /* background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url('images/background01.jpg'); */
-  background: #90bca1;
+  background: #0fb97b;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 80px 0;

@@ -33,14 +33,12 @@ const Marketing = () => {
     },
     {
       title1: "데이터 기반 마케팅 전략",
-      text1:
-        "해석하기 어렵거나 검증되지 않은 마케팅에 돈을 쏟아 붓는 것을 중단하세요! 저희는 골프 연습장 / 아카데미를 위한 가장 효과적인 마케팅 전략을 테스트하고 최적화 했습니다. ",
-      text2:
-        "고객의 특성을 파악하여 매장 맞춤형 광고를 집행하고 명확하고 정직한 리포트를 제공해드립니다. 이를 통해 고객의 유입을 늘리고, 재구매를 유도할 수 있습니다.",
+      text1: "검증되지 않은 마케팅에 돈을 쏟아 붓는 것을 중단하세요!",
+      text2: "저희는 골프 연습장/아카데미를 위한 가장 효과적인 마케팅 전략을 테스트하고 최적화 했습니다. 고객의 특성을 파악하여 매장 맞춤형 광고를 집행하고 명확하고 정직한 리포트를 제공해드립니다. 이를 통해 고객의 유입을 늘리고, 재구매를 유도할 수 있습니다.",
     },
     {
       title1: "마케팅에 필요한",
-      title2: "모든 것을 한 곳에서",
+      title2: "모든 것을 한 곳에서 !",
       text1: "여러 업체를 선정하고 컨택하는데 시간을 들이지 마세요! ",
       text2:
         "매장 홍보에 필요한 모든 인쇄물 제작부터 배포, 온라인용 이미지까지 모그를 통해 한번에 해결할 수 있습니다.",
@@ -69,7 +67,7 @@ const Marketing = () => {
                 <div>
                   <h4>{item.title1}</h4>
                   <h4>{item.title2}</h4>
-                  <p>{item.text1}</p>
+                  <p style={{marginTop: '20px'}}>{item.text1}</p>
                   <p>{item.text2}</p>
                   <p>{item.text3}</p>
                   {item.imgSrc ? (
@@ -121,8 +119,7 @@ const AdvantageGrid = styled.div`
     border-radius: 1rem;
     > h4 {
       font-size: 2rem;
-      margin-bottom: 1rem;
-      line-height: 0.8;
+      line-height: 40px;
     }
   }
   > div:nth-child(1) {
@@ -136,13 +133,10 @@ const AdvantageGrid = styled.div`
     }
   }
   > div:nth-child(2) {
-    background: #efffef;
-    > h4 {
-      margin-bottom: 3.5rem;
-    }
+    background: #fff7fc;
   }
   > div:nth-child(3) {
-    background: #fffaef;
+    background: #fffff2;
   }
   @media (max-width: 767px) {
     margin: 3rem 0;
@@ -150,7 +144,6 @@ const AdvantageGrid = styled.div`
       padding: 3rem 2rem;
       > h4 {
         font-size: 1.25rem;
-        margin-bottom: 0.8rem;
       }
       > p {
         font-size: 0.9rem;
@@ -174,7 +167,7 @@ const AdvantageGrid = styled.div`
   }
 `;
 const Title = styled.h2`
-  font-size: 3rem;
+  font-size: 2.8rem;
   line-height: 1em;
   letter-spacing: -0.4px;
   font-weight: 600;
@@ -187,7 +180,7 @@ const Title = styled.h2`
 `;
 const SubTitle = styled.h4`
   font-size: 1.4rem;
-  color: #47b589;
+  color: #0fb97b;
   @media (max-width: 767px) {
     letter-spacing: -0.4px;
     font-size: 1.2rem;

@@ -183,7 +183,6 @@ const ImageDiv = styled.div`
   border-radius: 1rem;
   > img {
     border-radius: 1rem;
-    /* box-shadow: 0 8px 18px rgba(0,0,0,.05); */
   }
   @media (max-width: 1023px) {
     width: 100%;
@@ -194,7 +193,7 @@ const ImageDiv = styled.div`
   }
 `;
 const Title = styled.h2`
-  font-size: 3rem;
+  font-size: 2.8rem;
   line-height: 1.2em;
   letter-spacing: -0.4px;
   font-weight: 600;
@@ -207,7 +206,7 @@ const Title = styled.h2`
 `;
 const SubTitle = styled.h4`
   font-size: 1.4rem;
-  color: #47b589;
+  color: #0fb97b;
   @media (max-width: 767px) {
     letter-spacing: -0.4px;
     font-size: 1.2rem;

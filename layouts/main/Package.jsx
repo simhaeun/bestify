@@ -95,6 +95,15 @@ const Package = () => {
           </Card>
         </Grid>
 
+        <ButtonWrap>
+        <FreeBtn>
+          <Link href="/moregolf">
+            자세히보기
+          </Link>
+        </FreeBtn>
+        </ButtonWrap>
+
+
       </Container>
     </section>
   );
@@ -165,7 +174,7 @@ const CardHeader = styled.div`
     &.xs {font-size: .8rem; padding-left: 4px;}
     &.tooltip {
       background: #DBFFF2;
-      color: #03C780;
+      color: #0fb97b;
       padding: 5px 15px;
       border-radius: 10px;
       margin-bottom: 1rem;
@@ -200,7 +209,7 @@ const CardCont = styled.div`
       content: '✓';
       width: 15px;
       height: 15px;
-      color: #03C780;
+      color: #0fb97b;
       display: inline-block;
       margin-right: 6px;
     }
@@ -216,7 +225,7 @@ const CardCont = styled.div`
     }
     .underline {
       font-size: 1.1rem;
-      color: #03C780;
+      color: #0fb97b;
       font-weight: 600;
       margin: 0;
     }
@@ -231,7 +240,7 @@ const CardCont = styled.div`
   }
 `;
 const Title = styled.h2`
-  font-size: 3rem;
+  font-size: 2.8rem;
   line-height: 1em;
   letter-spacing: -0.4px;
   font-weight: 600;
@@ -242,20 +251,28 @@ const Title = styled.h2`
     font-size: 1.8rem;
   }
 `;
-const SubTitle = styled.h4`
-  font-size: 1.4rem;
-  color: #47b589;
-  @media (max-width: 767px) {
-    letter-spacing: -0.4px;
-    font-size: 1.2rem;
-    padding-top: 1rem;
-  }
-`;
-const Text = styled.p`
-  font-size: 1.25rem;
-  letter-spacing: -0.4px;
-  line-height: 1.6em;
-  @media (max-width: 767px) {
-    font-size: 1rem;
+
+const ButtonWrap = styled.div`
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+const FreeBtn = styled.button`
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  border-radius: 60px;
+  line-height: 1.2em;
+  cursor: pointer;
+  background-color: #0fb97b;
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+  color: #fff;
+  transition: .5s;
+  &:hover {
+    background: #DBFFF2;
+    color: #0fb97b;
+    transition: .5s;
   }
 `;

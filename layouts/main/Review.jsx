@@ -9,28 +9,18 @@ const review = [
   {
     id: 1,
     name: "골프 아카데미 A",
-    text1: "고객의 플레이 스타일과 선호하는 시간대를 파악해서 그에 맞는 티타임을 예약할 수 있고, 이렇게 하니까 많은 고객들이 만족하고 돌아오는 걸 볼 수 있었어요!",
+    text1: "모그를 도입한 후, 예약 증가와 함께 매출도 꾸준히 상승 중입니다. 경쟁이 치열한 골프장 시장에서 빛나는 솔루션을 찾게 되어 기뻐요. 매출 관리도 훨씬 간편해졌어요 ",
   },
   {
     id: 2,
     name: "골프 아카데미 B",
-    text1: "고객님들이 자신에게 딱 맞는 서비스를 받을 수 있다는 점에서 저희 매장을 선호하게 되었고, 매장의 매출이 상당히 늘었습니다.",
+    text1: "이제는 고객들과 더 가까워진 느낌이에요. 고객 데이터를 통해 니즈를 파악하고, 서비스를 제공하니까 고객 만족도도 엄청 좋아지고 있어요.",
   },
   {
     id: 3,
     name: "골프 아카데미 C",
-    text1: "타겟 마케팅 전략의 성공을 통해 고객 유입과 재매출이 증가했어요! 새로운 고객 유입에 큰 도움이 되었습니다.",
+    text1: "높은 고객 만족도, 그리고 높아진 매출 모그 덕분이에요! 고객 데이터를 활용한 관리가 정말 큰 도움이 되고 있어요.",
   },
-  // {
-  //   id: 4,
-  //   name: "골프 아카데미 D",
-  //   text1: "개인화된 서비스와 마케팅을 통해 고객들의 만족도를 높일 수 있었습니다. 매장의 경쟁력을 강화시키고, 지속적인 성장에 도움을 주었습니다.",
-  // },
-  // {
-  //   id: 5,
-  //   name: "골프 아카데미 E",
-  //   text1: "고객관리와 매출관리를 위해 Saas 솔루션을 도입하였는데, Saas 솔루션을 활용하여 매출을 증대시키는 동시에 고객 만족도가 높아졌어요",
-  // },
 ];
 
 const Review = () => {
@@ -61,24 +51,20 @@ const Review = () => {
           <Grid>
             {review.map((item) => (
               <Item key={item}>
-                <Profile>
+                {/* <Profile>
                   <Image
                     src={`/images/review0${item.id}.png`}
                     alt="review"
                     width={165}
                     height={165}
                   />
-                </Profile>
+                </Profile> */}
                 <TextWrap>
-                  <Typography variant="h6" component="h6" mb={2}>
-                    {item.name}
-                  </Typography>
+                  {/* <Typography variant="h6" component="h6" mb={2}></Typography>ㄴ */}
                   <Typography variant="body1" component="p">
                     {item.text1}
                   </Typography>
-                  {/* <Typography variant="body1" component="p">
-                    {item.text2}
-                  </Typography> */}
+                  {/* <Typography variant="body1" component="p"></Typography> */}
                 </TextWrap>
               </Item>
             ))}
@@ -129,7 +115,7 @@ const Item = styled.div`
   } ;
 `;
 const Title = styled.h2`
-  font-size: 3rem;
+  font-size: 2.8rem;
   line-height: 1.2em;
   letter-spacing: -0.4px;
   font-weight: 600;
@@ -142,7 +128,7 @@ const Title = styled.h2`
 const SubTitle = styled.h4`
   font-size: 1.4rem;
   line-height: 1.5em;
-  color: #47b589;
+  color: #0fb97b;
   @media (max-width: 767px) {
     font-size: 1.2rem;
   }
@@ -166,6 +152,7 @@ const TextWrap = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: left;
   height: 180px;
   > h6 {
     font-weight: 600;

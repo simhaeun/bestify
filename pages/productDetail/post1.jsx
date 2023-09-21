@@ -107,7 +107,7 @@ const TitleWrap = styled.div`
   }
 `;
 const Title = styled.h2`
-  font-size: 3rem;
+  font-size: 2.8rem;
   line-height: 1.2em;
   letter-spacing: -0.4px;
   font-weight: 600;
@@ -117,7 +117,7 @@ const Title = styled.h2`
   }
 `;
 const SubTitle = styled.p`
-  color: #47b589;
+  color: #0fb97b;
   font-weight: 700;
   font-size: 1.25rem;
   letter-spacing: -0.4px;

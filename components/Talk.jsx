@@ -7,7 +7,7 @@ const Floating = styled.div`
   right: 50px;
   width: 80px;
   height: 80px;
-  background: #47b589;
+  background: #0fb97b;
   border-radius: 50%;
   text-align: center;
   align-items: center;

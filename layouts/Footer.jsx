@@ -8,12 +8,12 @@ const Footer = () => {
     <Section>
       <Container>
         <LogoWrap>
-          <Image src="/images/morg-logo-w.png" alt="logoImage" width={100} height={20} />
+          <Image src="/morg-logo.png" alt="logoImage" width={100} height={20} />
         </LogoWrap>
 
         <Flex>
           <div>
-            <p>주식회사 모그</p>
+            <p><strong>주식회사 모그</strong></p>
             <p>서울특별시 강남구 도곡동 187-1</p>
             <p>사업자 등록번호: 867-81-02415</p>
             <span style={{fontSize: '12px'}}>Copyright ⓒ Morg All rights reserved.</span>
@@ -48,10 +48,9 @@ const Footer = () => {
 export default Footer;
 
 const Section = styled.footer`
-  background: #305b49;
-  color: #ccc;
+  background: #f0f3f5;
+  color: #484848;
   padding: 30px 0;
-  /* border-top: 1px solid rgb(232, 235, 237); */
   @media (max-width: 767px) {
     padding: 20px 0;
   }

@@ -35,14 +35,16 @@ const Main = () => {
             <br />
             고객 데이터 기반 상담관리, 고객관리, 매출관리 솔루션
           </SubTitle>
-          <Button data-aos="fade-in" data-aos-delay="150">
-            <Link href="/demo">무료이용시작</Link>
-            {/* <Link href="https://www.morg.im/" target="_blank">무료이용시작</Link> */}
-          </Button>
+          <div data-aos="fade-in" data-aos-delay="150">
+            <Button>
+              <Link href="/demo">무료이용시작</Link>
+              {/* <Link href="https://www.morg.im/" target="_blank">무료이용시작</Link> */}
+            </Button>
+          </div>
           <span
             data-aos="fade-in"
             data-aos-delay="200"
-            style={{ color: "#47b589" }}
+            style={{ color: "#0fb97b" }}
           >
             지금 신청하면 <span style={{ fontWeight: "600" }}>1개월 동안 무료</span>로 사용 가능합니다.
           </span>
@@ -97,18 +99,22 @@ const ImageDiv = styled.div`
 `;
 const Button = styled.button`
   display: block;
-  margin: 1.8rem auto;
-  padding: 1rem 2.3rem;
-  font-size: 1.2rem;
-  border-radius: 12px;
-  line-height: 1.4;
+  margin: 50px auto;
+  border-radius: 60px;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 52px;
+  font-size: 21px;
   cursor: pointer;
-  background-color: #47b589;
+  background: #0fb97b;
   font-weight: 600;
   border: none;
   color: #fff;
+  transition: .5s;
   &:hover {
-    background: #007c5c;
+    background: #DBFFF2;
+    color: #0fb97b;
+    transition: .5s;
   }
   @media (max-width: 767px) {
     padding: 12px 24px;
@@ -116,13 +122,9 @@ const Button = styled.button`
   }
 `;
 const Title = styled.h2`
-  font-size: 4rem;
+  font-size: 48px;
   font-weight: 700;
-  letter-spacing: -0.8px;
-  line-height: 1.2em;
-  & > span {
-    letter-spacing: -1.8px;
-  }
+  line-height: 52px;
   @media (max-width: 1023px) {
     font-size: 3.25rem;
   }
@@ -131,11 +133,10 @@ const Title = styled.h2`
   }
 `;
 const SubTitle = styled.h4`
-  font-size: 1.25rem;
-  line-height: 1.6em;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25px;
   margin: 2rem 0;
-  letter-spacing: -0.08px;
   @media (max-width: 767px) {
     font-size: 1rem;
   }

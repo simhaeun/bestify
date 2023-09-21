@@ -15,7 +15,7 @@ import Image from "next/image";
 const drawerWidth = "100%";
 const navItems = [
   { title: "기능소개", nav: "/#skill" },
-  { title: "마케팅", nav: "/#marketing" },
+  { title: "마케팅", nav: "/moregolf" },
   { title: "고객사례", nav: "/#review" },
   { title: "문의하기", nav: "/#contact" },
   { title: "블로그", nav: "https://blog.naver.com/morgkorea" },
@@ -71,7 +71,7 @@ const Header = () => {
             </Button>
           ))}
           <FreeBtn>
-            <Link href="/demo">무료이용시작</Link>
+            <Link href="/demo">무료로 시작하기</Link>
             {/* <Link href="https://www.morg.im/" target="_blank">무료이용시작</Link> */}
           </FreeBtn>
         </Box>
@@ -127,17 +127,20 @@ const MobileNav = styled.nav`
   left: 0;
 `;
 const FreeBtn = styled.button`
-  padding: 0.8rem 1.2rem;
+  padding: 0.6rem 1.5rem;
   font-size: 1rem;
   border-radius: 10px;
   line-height: 1.2em;
   cursor: pointer;
-  background-color: #47b589;
+  background-color: #0fb97b;
   font-weight: 600;
   border: none;
   color: #fff;
+  transition: .5s;
   &:hover {
-    background: #007c5c;
+    background: #DBFFF2;
+    color: #0fb97b;
+    transition: .5s;
   }
 `;
 const Button = styled.button`
