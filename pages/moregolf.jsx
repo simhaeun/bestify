@@ -50,16 +50,24 @@ export default function MoreGolf() {
 
         {/* projectProcess */}
         <Section style={{background: '#000'}}>
+          {/* <ProcessBackground className="process" /> */}
           <Container>
-            <Image src="/images/mk-process.jpg" alt="process" width={860} height={1360} />
+            <Image src="/images/mk-process01.jpg" alt="process" width={860} height={1360} />
           </Container>
         </Section>
     </Layout>
   );
 }
-
 const Section = styled.section`
+  position: relative;
 `;
+const ProcessBackground = styled.div`
+  background-image: url('images/mk-process-bg.png');
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+`
 const Container = styled.div`
   /* width: 1200px; */
   margin: 0 auto;
