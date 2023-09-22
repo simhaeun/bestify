@@ -10,7 +10,7 @@ export default function MoreGolf() {
       {/* greeting */}
       <Section style={{background: '#181818'}}>
         <Container>
-          <Image src="/images/mk-greeting.jpg" alt="mk01" width={860} height={2200} />
+          <Image src="/images/mk-greeting.jpg" alt="greeting" width={860} height={2200} />
         </Container>
       </Section>
 
@@ -18,23 +18,32 @@ export default function MoreGolf() {
           <Flex>
             {/* userNeeds */}
             <Item>
-              <Image src="/images/mk-needs.jpg" alt="mk01" width={860} height={1100} />
+              <Image src="/images/mk-needs.jpg" alt="needs" width={860} height={1100} />
             </Item>
             {/* ourSolution */}
             <Item>
-              <Image src="/images/mk-solution.jpg" alt="mk01" width={860} height={1100} />
+              <Image src="/images/mk-solution.jpg" alt="solution" width={860} height={1100} />
             </Item>
             {/* priceInfo */}
             <Item>
-              <Image src="/images/mk-price.jpg" alt="mk01" width={860} height={1970} />
+              <Image src="/images/mk-price.jpg" alt="price" width={860} height={1970} />
             </Item>
             {/* programOverview */}
             <Item>
-              <Image src="/images/mk-overview.jpg" alt="mk01" width={860} height={1100} />
+              <Image src="/images/mk-overview.jpg" alt="overview" width={860} height={1100} />
             </Item>
             {/* details */}
             <Item>
-              <Image src="/images/mk-details.jpg" alt="mk01" width={860} height={8500} />
+              <Image src="/images/mk-details01.jpg" alt="details01" width={860} height={1735} />
+            </Item>
+            <Item>
+              <Image src="/images/mk-details02.jpg" alt="details02" width={860} height={2044} />
+            </Item>
+            <Item>
+              <Image src="/images/mk-details03.jpg" alt="details03" width={860} height={2456} />
+            </Item>
+            <Item>
+              <Image src="/images/mk-details04.jpg" alt="details04" width={860} height={2248} />
             </Item>
           </Flex>
         </Container>
@@ -42,7 +51,7 @@ export default function MoreGolf() {
         {/* projectProcess */}
         <Section style={{background: '#000'}}>
           <Container>
-            <Image src="/images/mk-process.jpg" alt="mk01" width={860} height={1360} />
+            <Image src="/images/mk-process.jpg" alt="process" width={860} height={1360} />
           </Container>
         </Section>
     </Layout>
