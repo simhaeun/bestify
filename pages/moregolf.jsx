@@ -34,16 +34,16 @@ export default function MoreGolf() {
             </Item>
             {/* details */}
             <Item>
-              <Image src="/images/mk-details01.jpg" alt="details01" width={860} height={1735} />
+              <Image src="/images/mk-details01.jpg" alt="details01" width={860} height={3164} />
             </Item>
             <Item>
-              <Image src="/images/mk-details02.jpg" alt="details02" width={860} height={2044} />
+              <Image src="/images/mk-details02.jpg" alt="details02" width={860} height={2086} />
             </Item>
             <Item>
-              <Image src="/images/mk-details03.jpg" alt="details03" width={860} height={2456} />
+              <Image src="/images/mk-details03.jpg" alt="details03" width={860} height={3184} />
             </Item>
             <Item>
-              <Image src="/images/mk-details04.jpg" alt="details04" width={860} height={2248} />
+              <Image src="/images/mk-details04.jpg" alt="details04" width={860} height={2125} />
             </Item>
           </Flex>
         </Container>
