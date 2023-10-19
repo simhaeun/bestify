@@ -3,6 +3,7 @@ import styled from "@emotion/styled";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Image from "next/image";
+import { Container, Center, Flex, LeftTextBox, RightTextBox, ImageDiv, Title, SubTitle, Text } from '../../styles/style';
 
 export default function Dashboard() {
   React.useEffect(() => {
@@ -50,10 +51,11 @@ export default function Dashboard() {
             <Image src="/images/main07.png" alt="" width={600} height={400} />
           </div>
         </Flex>
+
         <Flex data-aos="fade-left">
-          <ImageDiv>
+          <div>
             <Image src="/images/main06.png" alt="" width={600} height={450} />
-          </ImageDiv>
+          </div>
           <RightTextBox>
             <SubTitle>회원관리</SubTitle>
             <Title>
@@ -68,6 +70,7 @@ export default function Dashboard() {
             </Text>
           </RightTextBox>
         </Flex>
+
         <Flex data-aos="fade-right">
           <LeftTextBox>
             <SubTitle>매출관리</SubTitle>
@@ -111,113 +114,4 @@ export default function Dashboard() {
 
 const Section = styled.section`
   background: linear-gradient(180deg, #f3f5f9 0%, hsl(0, 0%, 100%) 100%);
-`;
-const Container = styled.div`
-  width: 1200px;
-  margin: 0 auto;
-  @media (max-width: 1279px) {
-    width: 100%;
-    padding: 0 1.5rem;
-  }
-`;
-const Center = styled.div`
-  text-align: center;
-  display: flex;
-  flex: 1 0 0px;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  gap: 20px;
-  height: min-content;
-  justify-content: flex-start;
-`;
-const Flex = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 200px;
-  &:first-child {
-    margin-top: 0;
-  }
-  @media (max-width: 1023px) {
-    display: block;
-    margin-top: 100px;
-    &:nth-child(even) {
-      display: flex;
-      flex-wrap: wrap-reverse;
-      flex-direction: column-reverse;
-      > div {
-        width: 100%;
-      }
-    }
-  }
-  @media (max-width: 1023px) {
-    margin-top: 80px;
-  }
-`;
-const LeftTextBox = styled.div`
-  text-align: left;
-  align-items: flex-start;
-  display: flex;
-  flex: 1 0 0px;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  gap: 20px;
-  height: min-content;
-  justify-content: flex-start;
-`;
-const RightTextBox = styled.div`
-  text-align: right;
-  display: flex;
-  flex: 1 0 0px;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  gap: 20px;
-  height: min-content;
-  justify-content: flex-start;
-`;
-
-const ImageDiv = styled.div`
-  width: 600px;
-  height: auto;
-  border-radius: 1rem;
-  > img {
-    border-radius: 1rem;
-  }
-  @media (max-width: 1023px) {
-    width: 100%;
-    margin: 1.5rem 0;
-  }
-  @media (max-width: 767px) {
-    margin: 1rem 0;
-  }
-`;
-const Title = styled.h2`
-  font-size: 2.8rem;
-  line-height: 1.2em;
-  letter-spacing: -0.4px;
-  font-weight: 600;
-  @media (max-width: 1023px) {
-    font-size: 2.25rem;
-  }
-  @media (max-width: 767px) {
-    font-size: 1.8rem;
-  }
-`;
-const SubTitle = styled.h4`
-  font-size: 1.4rem;
-  color: #0fb97b;
-  @media (max-width: 767px) {
-    letter-spacing: -0.4px;
-    font-size: 1.2rem;
-    padding-top: 1rem;
-  }
-`;
-const Text = styled.p`
-  font-size: 1.25rem;
-  letter-spacing: -0.4px;
-  line-height: 1.6em;
-  @media (max-width: 767px) {
-    font-size: 1rem;
-  }
 `;

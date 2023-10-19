@@ -1,10 +1,9 @@
 import * as React from "react";
-import styled from "@emotion/styled";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Image from "next/image";
-import Link from "next/link";
 import Package from "./Package";
+import { Container, Center, Title, SubTitle, Text, AdvantageGrid } from '../../styles/style';
 
 const Marketing = () => {
   React.useEffect(() => {
@@ -64,134 +63,23 @@ const Marketing = () => {
           {tabItems.map((item) => {
             return (
               <>
-                <div>
+                <div data-aos="fade-in">
                   <h4>{item.title1}</h4>
                   <h4>{item.title2}</h4>
                   <p style={{marginTop: '20px'}}>{item.text1}</p>
                   <p>{item.text2}</p>
                   <p>{item.text3}</p>
                   {item.imgSrc ? (
-                    <Image src={item.imgSrc} width={300} height={300} />
+                    <Image src={item.imgSrc} width={300} height={300} alt="img" />
                   ) : null}
                 </div>
               </>
             );
           })}
         </AdvantageGrid>
-
-        <Package/>
       </Container>
+      <Package/>
     </section>
   );
 };
 export default Marketing;
-
-const Container = styled.div`
-  width: 1420px;
-  margin: 0 auto;
-  @media (max-width: 1279px) {
-    width: 100%;
-    padding: 0 1.5rem;
-  }
-`;
-const Center = styled.div`
-  text-align: center;
-  display: flex;
-  flex: 1 0 0px;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  gap: 20px;
-  height: min-content;
-  justify-content: flex-start;
-`;
-const AdvantageGrid = styled.div`
-  display: grid;
-  max-width: 1200px;
-  margin: 0 auto;
-  margin-top: 100px;
-  grid-template-rows: repeat(2);
-  gap: 1.5rem;
-  font-size: 1.1rem;
-  line-height: 1.5;
-  color: #191919;
-  > div {
-    padding: 6rem 4rem;
-    border-radius: 1rem;
-    > h4 {
-      font-size: 2rem;
-      line-height: 40px;
-    }
-  }
-  > div:nth-child(1) {
-    position: relative;
-    grid-column: 1 / 3;
-    background: #eff6ff;
-    > img {
-      position: absolute;
-      right: 100px;
-      bottom: 0px;
-    }
-  }
-  > div:nth-child(2) {
-    background: #fff7fc;
-  }
-  > div:nth-child(3) {
-    background: #fffff2;
-  }
-  @media (max-width: 767px) {
-    margin: 3rem 0;
-    > div {
-      padding: 3rem 2rem;
-      > h4 {
-        font-size: 1.25rem;
-      }
-      > p {
-        font-size: 0.9rem;
-        display: inline;
-      }
-    }
-    > div:nth-child(1) {
-      position: relative;
-      grid-column: 1;
-      background: #eff6ff;
-      > img {
-        display: none;
-      }
-    }
-    > div:nth-child(2) {
-      background: #efffef;
-      > h4 {
-        margin-bottom: 1rem;
-      }
-    }
-  }
-`;
-const Title = styled.h2`
-  font-size: 2.8rem;
-  line-height: 1em;
-  letter-spacing: -0.4px;
-  font-weight: 600;
-  @media (max-width: 1023px) {
-    font-size: 2.25rem;
-  }
-  @media (max-width: 767px) {
-    font-size: 1.8rem;
-  }
-`;
-const SubTitle = styled.h4`
-  font-size: 1.4rem;
-  color: #0fb97b;
-  @media (max-width: 767px) {
-    letter-spacing: -0.4px;
-    font-size: 1.2rem;
-    padding-top: 1rem;
-  }
-`;
-const Text = styled.p`
-  font-size: 1.25rem;
-  letter-spacing: -0.4px;
-  line-height: 1.6em;
-  @media (max-width: 767px) {
-    font-size: 1rem;
-  }
-`;

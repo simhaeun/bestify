@@ -1,5 +1,4 @@
 import styled from "@emotion/styled";
-import { Yuji_Boku } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 

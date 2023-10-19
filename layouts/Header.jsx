@@ -12,6 +12,7 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 import Link from "next/link";
 import Image from "next/image";
+
 const drawerWidth = "100%";
 const navItems = [
   { title: "기능소개", nav: "/#skill" },
@@ -19,7 +20,6 @@ const navItems = [
   { title: "고객사례", nav: "/#review" },
   { title: "문의하기", nav: "/#contact" },
   { title: "블로그", nav: "https://blog.naver.com/morgkorea" },
-  // { title: "무료이용시작", nav: "/demo" },
 ];
 
 const Header = () => {
