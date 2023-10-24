@@ -9,7 +9,6 @@ const Footer = () => {
         <LogoWrap>
           <Image src="/morg-logo.png" alt="logoImage" width={100} height={20} />
         </LogoWrap>
-
         <Flex>
           <div>
             <p><strong>주식회사 모그</strong></p>
@@ -17,7 +16,6 @@ const Footer = () => {
             <p>사업자 등록번호: 867-81-02415</p>
             <span style={{fontSize: '12px'}}>Copyright ⓒ Morg All rights reserved.</span>
           </div>
-
           <Flex>
             <ul>
               <li>고객센터</li>
@@ -39,7 +37,6 @@ const Footer = () => {
             </ul>
           </Flex>
         </Flex>
-
       </Container>
     </Section>
   );
@@ -103,41 +100,6 @@ const Flex = styled.div`
     }
     > ul:first-child {
       margin-top: 1rem;
-    }
-  }
-`;
-const MobileHide = styled.li`
-  @media (max-width: 1200px) {
-    display: none;
-  }
-`;
-const Mobile = styled.ul`
-  display: none;
-  line-height: 1.6em;
-  & > li {
-    position: relative;
-    list-style: none;
-    color: #a7a7aa;
-    font-size: 16px;
-    padding: 0 0.5rem 0 0;
-    ::before {
-      content: "";
-      border-left: 1px solid rgb(228, 228, 229);
-      padding: 0 0 0 0.5rem;
-    }
-    :nth-child(1)::before {
-      content: none;
-    }
-  }
-  @media (max-width: 1200px) {
-    display: block;
-    & > li {
-      font-size: 14px;
-    }
-  }
-  @media (max-width: 767px) {
-    & > li {
-      font-size: 12px;
     }
   }
 `;

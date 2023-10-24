@@ -21,7 +21,7 @@ const Blog = () => {
   }, []);
 
   return (
-    <Section id="blog">
+    <section id="blog">
       <Container>
         <Flex>
           <div data-aos="fade-in">
@@ -44,12 +44,10 @@ const Blog = () => {
           </AnimationWrap>
         </Flex>
       </Container>
-    </Section>
+    </section>
   );
 };
 
 export default Blog;
 
-const Section = styled.section`
-  background: #fff;
-`;
+

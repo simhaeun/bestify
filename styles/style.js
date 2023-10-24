@@ -17,6 +17,7 @@ export const Container1420 = styled.div`
     padding: 0 1.5rem;
   }
 `;
+
 export const Center = styled.div`
   text-align: center;
   display: flex;

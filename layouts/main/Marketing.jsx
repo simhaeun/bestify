@@ -64,11 +64,11 @@ const Marketing = () => {
             return (
               <>
                 <div data-aos="fade-in">
-                  <h4>{item.title1}</h4>
-                  <h4>{item.title2}</h4>
-                  <p style={{marginTop: '20px'}}>{item.text1}</p>
-                  <p>{item.text2}</p>
-                  <p>{item.text3}</p>
+                  <h4 data-aos="fade-in">{item.title1}</h4>
+                  <h4 data-aos="fade-in">{item.title2}</h4>
+                  <p data-aos="fade-in" style={{marginTop: '20px'}}>{item.text1}</p>
+                  <p data-aos="fade-in">{item.text2}</p>
+                  <p data-aos="fade-in">{item.text3}</p>
                   {item.imgSrc ? (
                     <Image src={item.imgSrc} width={300} height={300} alt="img" />
                   ) : null}

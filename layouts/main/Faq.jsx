@@ -1,5 +1,4 @@
 import * as React from "react";
-import styled from "@emotion/styled";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import FaqList from "@/components/FaqList";
@@ -20,18 +19,15 @@ const Faq = () => {
   }, []);
 
   return (
-    <Section>
+    <section>
       <Container>
         <div data-aos="fade-in">
           <Title>FAQ</Title>
-          <FaqList/>
+          <FaqList />
         </div>
       </Container>
-    </Section>
+    </section>
   );
 }
 export default Faq;
-
-const Section = styled.section`
-  background: #fff;
-`;
+ 

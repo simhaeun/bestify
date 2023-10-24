@@ -4,7 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Link from "next/link";
 import Image from "next/image";
-import { Container, Center, ImageDiv, Text2, SubTitle, Text, Button } from '../../styles/style';
+import { Container, Center, ImageDiv, Text2, Button } from '../../styles/style';
 
 const Main = () => {
   React.useEffect(() => {

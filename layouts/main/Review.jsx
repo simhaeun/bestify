@@ -76,4 +76,5 @@ const Review = () => {
     </section>
   );
 };
+
 export default Review;

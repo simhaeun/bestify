@@ -6,7 +6,6 @@ import Dashboard from '@/layouts/main/Dashboard'
 import Marketing from '@/layouts/main/Marketing'
 import Contact from '@/layouts/main/Contact'
 import Blog from '@/layouts/main/Blog'
-import Talk from '@/components/Talk'
 import Faq from '@/layouts/main/Faq'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -20,7 +19,7 @@ const Home = () => {
       <Review/>
       <Contact/>
       {/* <Blog/> */}
-      {/* <Talk/> */}
+      {/* <Faq/> */}
     </Layout>
   )
 }
